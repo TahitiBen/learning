@@ -13,7 +13,7 @@
 - Git : notion de repo / remote / clone — vu le 2026-07-17 — dernière révision : —
 - Git : `git status` et lecture de la sortie — vu le 2026-07-17 — dernière révision : —
 - Git : dossiers vides invisibles → `.gitkeep` — vu le 2026-07-17 — dernière révision : —
-- Git : `git add` / `commit` / `push` + convention de message — à compléter en fin de séance 1
+- Git : cycle `add` → `commit` → `push`, 3 zones, convention de message `type:` — vu le 2026-07-17 — dernière révision : —
 
 ## Solide (révision espacée longue)
 

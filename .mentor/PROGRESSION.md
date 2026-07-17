@@ -26,10 +26,10 @@
 - **Terminal / navigation** : `cd`, `mkdir`, `ls`, `Copy-Item`, `$HOME`, `~` — vus aujourd'hui, à consolider.
 - **Git de base** : `git clone`, `git status`, notion de repo / remote / branche `main` — vus aujourd'hui.
 - **`.gitkeep` / dossiers vides invisibles pour git** — compris aujourd'hui.
+- **Cycle git `add` → `commit` → `push`** : 3 zones, staging, message de commit (convention `type:`), `-u origin main` — vu une fois aujourd'hui (séance 1). À revoir pour ancrer.
 
 ### À voir (prochainement)
-- `git add`, `git commit`, `git push` (prévu en fin de séance 1).
-- Python : variables, types, `print`, conditions, boucles, fonctions.
+- Python : `print`, exécuter un script `.py`, variables et types, conditions, boucles, fonctions.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
