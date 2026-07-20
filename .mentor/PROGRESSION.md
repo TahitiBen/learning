@@ -20,7 +20,7 @@
 ## Concepts
 
 ### Acquis (sans indice, ≥ 2 fois)
-- *(rien encore — début du parcours)*
+- **Python types & règle guillemets = texte** (`str`/`int`/`float`/`bool`, `type()`) — corrigé seul en séance 2, puis répondu juste sans indice en révision séance 3.
 
 ### Fragiles (vus, mais avec indice ou une seule fois)
 - **Terminal / navigation** : `cd`, `mkdir`, `ls`, `Copy-Item`, `$HOME`, `~` — vus aujourd'hui, à consolider.
@@ -30,9 +30,10 @@
 - **Python `print`** : affichage, chaînes entre guillemets — vu séance 2. Découverte de `print(val, "texte")`.
 - **Python variables & types** (`str`/`int`/`float`/`bool`, `type()`) — vu séance 2. Piège **guillemets = texte** rencontré et corrigé seul ; à confirmer une 2e fois.
 - **Exécuter un script** (`python fichier.py`) — vu séance 2.
+- **Python opérateurs** (`+ - * / // % **`, priorité, parenthèses) — vu séance 3. Piège `^` ≠ puissance (`**`) rencontré et corrigé avec indice. À recroiser.
 
 ### À voir (prochainement)
-- Python : opérateurs (`2+2` vs `"2"+"2"`), `input()`, conditions (`if`/`elif`/`else`), boucles, fonctions.
+- Python : `input()` (+ `int(input(...))`), conditions (`if`/`elif`/`else`), boucles, fonctions.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
