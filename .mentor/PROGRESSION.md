@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 0 — Environnement & git** (en cours). Puis **Phase 1 — Python fondamentaux**.
+**Phase 1 — Python fondamentaux** (en cours, séance 2). Phase 0 (environnement & git) terminée.
 
 ## Concepts
 
@@ -26,10 +26,13 @@
 - **Terminal / navigation** : `cd`, `mkdir`, `ls`, `Copy-Item`, `$HOME`, `~` — vus aujourd'hui, à consolider.
 - **Git de base** : `git clone`, `git status`, notion de repo / remote / branche `main` — vus aujourd'hui.
 - **`.gitkeep` / dossiers vides invisibles pour git** — compris aujourd'hui.
-- **Cycle git `add` → `commit` → `push`** : 3 zones, staging, message de commit (convention `type:`), `-u origin main` — vu une fois aujourd'hui (séance 1). À revoir pour ancrer.
+- **Cycle git `add` → `commit` → `push`** : commandes bien retenues (séance 2) ; mais **noms des 3 zones**, `.gitkeep` et `-u` **oubliés** à la révision → à recroiser.
+- **Python `print`** : affichage, chaînes entre guillemets — vu séance 2. Découverte de `print(val, "texte")`.
+- **Python variables & types** (`str`/`int`/`float`/`bool`, `type()`) — vu séance 2. Piège **guillemets = texte** rencontré et corrigé seul ; à confirmer une 2e fois.
+- **Exécuter un script** (`python fichier.py`) — vu séance 2.
 
 ### À voir (prochainement)
-- Python : `print`, exécuter un script `.py`, variables et types, conditions, boucles, fonctions.
+- Python : opérateurs (`2+2` vs `"2"+"2"`), `input()`, conditions (`if`/`elif`/`else`), boucles, fonctions.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
