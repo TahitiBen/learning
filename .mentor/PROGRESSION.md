@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux** (en cours, séance 2). Phase 0 (environnement & git) terminée.
+**Phase 1 — Python fondamentaux** (en cours, séance 4). Phase 0 (environnement & git) terminée.
 
 ## Concepts
 
@@ -30,12 +30,16 @@
 - **Python `print`** : affichage, chaînes entre guillemets — vu séance 2. Découverte de `print(val, "texte")`.
 - **Python variables & types** (`str`/`int`/`float`/`bool`, `type()`) — vu séance 2. Piège **guillemets = texte** rencontré et corrigé seul ; à confirmer une 2e fois.
 - **Exécuter un script** (`python fichier.py`) — vu séance 2.
-- **Python opérateurs** (`+ - * / // % **`, priorité, parenthèses) — vu séance 3. Piège `^` ≠ puissance (`**`) rencontré et corrigé avec indice. À recroiser.
+- **Python opérateurs** (`+ - * / // % **`, priorité, parenthèses) — vu séance 3, reconsolidé séance 4 (révision juste). Presque acquis.
+- **Python `input()` + conversion `int(input(...))`** — vu séance 4, réussi sans blocage. À confirmer une 2e fois. Rappel : `input()` renvoie toujours un `str`.
+- **Git : noms des 3 zones** — restitués en entier séance 4 (avec un léger coup de pouce). À reconfirmer 1-2 fois avant de valider.
 
 ### À voir (prochainement)
-- Python : `input()` (+ `int(input(...))`), conditions (`if`/`elif`/`else`), boucles, fonctions.
+- Python : conditions (`if`/`elif`/`else`), comparaisons (`==`, `!=`, `<`…), indentation ; puis boucles, fonctions.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
 - Exploiter son bagage SISR : ancrer les exercices dans des cas système/réseau qui lui parlent.
 - Rythme court (1 h) : viser 1 concept + 1 exercice par séance, pas plus.
+- **Demande explicite de Ruben (séance 4) : NE JAMAIS lâcher un point non maîtrisé.** Le remettre en révision à CHAQUE séance jusqu'à ancrage complet (ex. noms des 3 zones de git). Privilégier la restitution active (lui faire redire/reproduire) plutôt que de simplement re-répéter.
+- Se décourage vite quand il bloque → décomposer, valoriser ce qui est déjà juste.

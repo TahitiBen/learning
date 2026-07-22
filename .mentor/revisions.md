@@ -13,12 +13,13 @@
 - Git : notion de repo / remote / clone — vu le 2026-07-17 — dernière révision : —
 - Git : `git status` et lecture de la sortie — vu le 2026-07-17 — dernière révision : —
 - Git : dossiers vides invisibles → `.gitkeep` — vu le 2026-07-17 — dernière révision : 2026-07-20 (oublié, à recroiser)
-- Git : noms des 3 zones (working / staging / repository) — vu le 2026-07-17 — dernière révision : 2026-07-20 (**encore oublié**, image du colis à tester)
+- Git : noms des 3 zones (working / staging / repository → remote) — vu le 2026-07-17 — dernière révision : 2026-07-20 séance 4 (**restitué en entier** avec léger coup de pouce → à reconfirmer 1-2 fois)
 - Git : rôle de `-u` dans `push -u origin main` — vu le 2026-07-17 — dernière révision : 2026-07-20 (oublié, à recroiser)
 - Python : `print` + chaînes entre guillemets — vu le 2026-07-20 — dernière révision : —
 - Python : variables et affectation `=` — vu le 2026-07-20 — dernière révision : —
 - Python : exécuter un script (`python fichier.py`) — vu le 2026-07-20 — dernière révision : —
-- Python : opérateurs `+ - * / // % **`, priorité, `^` ≠ puissance — vu le 2026-07-20 — dernière révision : —
+- Python : opérateurs `+ - * / // % **`, priorité, `^` ≠ puissance — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 4 (juste)
+- Python : `input()` renvoie toujours un `str` + conversion `int(input(...))` — vu le 2026-07-20 — dernière révision : —
 
 ## Solide (révision espacée longue)
 

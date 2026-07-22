@@ -1,4 +1,5 @@
-prefixe = 26
+prefixe = input("écriver un chiffre :")
+sufixe = int(prefixe)
 
-print (2 ** (32 - prefixe)-2)
+print (2 ** (32 - sufixe)-2)
  
