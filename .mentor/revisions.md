@@ -21,8 +21,12 @@
 - Python : opérateurs `+ - * / // % **`, priorité, `^` ≠ puissance — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 4 (juste)
 - Python : `input()` renvoie toujours un `str` + conversion `int(input(...))` — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 5 (juste)
 - Python : conditions `if`/`elif`/`else`, `:` + indentation, comparaisons, `==` vs `=`, `and` — vu le 2026-07-20 — dernière révision : —
+- Python : **`and` (valide/dedans) vs `or` (invalide/dehors)** + `else` sans condition + `&` ≠ `and` — vu le 2026-07-20 séance 8 — dernière révision : —
+- Python : `while` de validation (redemander tant qu'invalide) — vu le 2026-07-20 séance 8 — dernière révision : —
 - Python : boucles `for` + `range` (borne de fin **exclue**), `for` vs `while` — vu le 2026-07-20 — dernière révision : —
 - Python : fonctions `def`/`return`/appel `nom(arg)`, `return` vs `print` — vu le 2026-07-20 — dernière révision : —
+- Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
+- Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
 
 ## Solide (révision espacée longue)
 

@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux** (en cours, séance 7). Phase 0 (environnement & git) terminée.
+**Phase 1 — Python fondamentaux** (en cours, séance 8). Phase 0 (environnement & git) terminée. 🎉 1er programme complet réalisé (mini-projet subnet interactif).
 
 ## Concepts
 
@@ -34,12 +34,12 @@
 - **Python opérateurs** (`+ - * / // % **`, priorité, parenthèses) — vu séance 3, reconsolidé séance 4 (révision juste). Presque acquis.
 - **Python `input()` + conversion `int(input(...))`** — vu séance 4, réussi sans blocage. À confirmer une 2e fois. Rappel : `input()` renvoie toujours un `str`.
 - **Git : `-u` (set upstream)** — enfin compris séance 7 (fausse piste « fichiers » levée : c'est l'adresse de destination, mémorisée au 1er push). Confirmer 1 dernière fois.
-- **Python conditions** (`if`/`else`, `:` + indentation, comparaisons `== != < > <= >=`, `and`) — vu séance 5, réussi (guidage sur la 2e borne). `==` vs `=` signalé. `elif` pas encore pratiqué. À recroiser.
-- **Python boucles `for` + `range`** (borne de fin exclue, variable de boucle pilotée par le `for`) — vu séance 6, refactoré proprement avec guidage. `while` introduit mais pas encore pratiqué. À reconfirmer.
+- **Python conditions `if`/`elif`/`else`** (indentation, comparaisons, `==` vs `=`, `and`/`or`) — `elif` écrit seul en séance 8 ; **`and` (dedans) vs `or` (dehors)** compris ; `else` sans condition (auto-diagnostiqué) ; `&` ≠ `and`. Presque solide, reconfirmer.
+- **Python boucles `for`/`range` + `while`** — `for`/`range` séance 6 ; **`while` en validation** pratiqué séance 8 (redemander tant qu'invalide), réussi. À reconfirmer seul.
 - **Python fonctions** (`def`, paramètre, `return`, appel `nom(arg)`) — vu séance 7. Définition acquise seul ; appel + `return` vs `print` compris après guidage. À recroiser sur un nouvel exemple.
 
 ### À voir (prochainement)
-- Mini-projet consolidation (input + fonction + `while` + `elif`) ; puis gestion d'erreurs (`try`/`except`), fin de Phase 1.
+- Gestion d'erreurs (`try`/`except`) pour rendre le programme increvable (saisie non numérique) → fin de Phase 1. Puis Phase 2 (fichiers, modules) ou démarrage SQL.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
