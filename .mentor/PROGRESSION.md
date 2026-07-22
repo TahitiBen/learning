@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux** (en cours, séance 4). Phase 0 (environnement & git) terminée.
+**Phase 1 — Python fondamentaux** (en cours, séance 5). Phase 0 (environnement & git) terminée.
 
 ## Concepts
 
@@ -32,10 +32,12 @@
 - **Exécuter un script** (`python fichier.py`) — vu séance 2.
 - **Python opérateurs** (`+ - * / // % **`, priorité, parenthèses) — vu séance 3, reconsolidé séance 4 (révision juste). Presque acquis.
 - **Python `input()` + conversion `int(input(...))`** — vu séance 4, réussi sans blocage. À confirmer une 2e fois. Rappel : `input()` renvoie toujours un `str`.
-- **Git : noms des 3 zones** — restitués en entier séance 4 (avec un léger coup de pouce). À reconfirmer 1-2 fois avant de valider.
+- **Git : noms des 3 zones** — restitués en entier séances 4 et 5 (léger pointage). Presque acquis, reconfirmer 1 fois encore.
+- **Git : `-u` (set upstream)** — toujours oublié (3 fois). À driller en priorité.
+- **Python conditions** (`if`/`else`, `:` + indentation, comparaisons `== != < > <= >=`, `and`) — vu séance 5, réussi (guidage sur la 2e borne). `==` vs `=` signalé. `elif` pas encore pratiqué. À recroiser.
 
 ### À voir (prochainement)
-- Python : conditions (`if`/`elif`/`else`), comparaisons (`==`, `!=`, `<`…), indentation ; puis boucles, fonctions.
+- Python : boucles (`while`, `for`, `range`), `elif` en pratique ; puis fonctions.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
