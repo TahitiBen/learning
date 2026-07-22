@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux** (en cours, séance 5). Phase 0 (environnement & git) terminée.
+**Phase 1 — Python fondamentaux** (en cours, séance 6). Phase 0 (environnement & git) terminée.
 
 ## Concepts
 
@@ -35,9 +35,10 @@
 - **Git : noms des 3 zones** — restitués en entier séances 4 et 5 (léger pointage). Presque acquis, reconfirmer 1 fois encore.
 - **Git : `-u` (set upstream)** — toujours oublié (3 fois). À driller en priorité.
 - **Python conditions** (`if`/`else`, `:` + indentation, comparaisons `== != < > <= >=`, `and`) — vu séance 5, réussi (guidage sur la 2e borne). `==` vs `=` signalé. `elif` pas encore pratiqué. À recroiser.
+- **Python boucles `for` + `range`** (borne de fin exclue, variable de boucle pilotée par le `for`) — vu séance 6, refactoré proprement avec guidage. `while` introduit mais pas encore pratiqué. À reconfirmer.
 
 ### À voir (prochainement)
-- Python : boucles (`while`, `for`, `range`), `elif` en pratique ; puis fonctions.
+- Python : fonctions (`def`, paramètres, `return`) ; repratiquer `while` et `elif`.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.

@@ -14,13 +14,14 @@
 - Git : `git status` et lecture de la sortie — vu le 2026-07-17 — dernière révision : —
 - Git : dossiers vides invisibles → `.gitkeep` — vu le 2026-07-17 — dernière révision : 2026-07-20 (oublié, à recroiser)
 - Git : noms des 3 zones (working / staging / repository → remote) — vu le 2026-07-17 — dernière révision : 2026-07-20 séance 5 (restitué en entier après pointage → reconfirmer 1 fois)
-- Git : rôle de `-u` dans `push -u origin main` (set upstream = mémorise le lien) — vu le 2026-07-17 — dernière révision : 2026-07-20 séance 5 (**encore oublié, 3e fois — PRIORITÉ**)
+- Git : rôle de `-u` dans `push -u origin main` (set upstream = mémorise le lien branche locale ↔ origin/main) — vu le 2026-07-17 — dernière révision : 2026-07-20 séance 6 (idée là, détails flous — **PRIORITÉ, redemander**)
 - Python : `print` + chaînes entre guillemets — vu le 2026-07-20 — dernière révision : —
 - Python : variables et affectation `=` — vu le 2026-07-20 — dernière révision : —
 - Python : exécuter un script (`python fichier.py`) — vu le 2026-07-20 — dernière révision : —
 - Python : opérateurs `+ - * / // % **`, priorité, `^` ≠ puissance — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 4 (juste)
 - Python : `input()` renvoie toujours un `str` + conversion `int(input(...))` — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 5 (juste)
 - Python : conditions `if`/`elif`/`else`, `:` + indentation, comparaisons, `==` vs `=`, `and` — vu le 2026-07-20 — dernière révision : —
+- Python : boucles `for` + `range` (borne de fin **exclue**), `for` vs `while` — vu le 2026-07-20 — dernière révision : —
 
 ## Solide (révision espacée longue)
 
