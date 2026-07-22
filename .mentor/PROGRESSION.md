@@ -15,12 +15,13 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux** (en cours, séance 6). Phase 0 (environnement & git) terminée.
+**Phase 1 — Python fondamentaux** (en cours, séance 7). Phase 0 (environnement & git) terminée.
 
 ## Concepts
 
 ### Acquis (sans indice, ≥ 2 fois)
 - **Python types & règle guillemets = texte** (`str`/`int`/`float`/`bool`, `type()`) — corrigé seul en séance 2, puis répondu juste sans indice en révision séance 3.
+- **Git : les 4 zones** (working directory → staging → repository → remote) — restituées correctement plusieurs séances de suite (5, 6, 7).
 
 ### Fragiles (vus, mais avec indice ou une seule fois)
 - **Terminal / navigation** : `cd`, `mkdir`, `ls`, `Copy-Item`, `$HOME`, `~` — vus aujourd'hui, à consolider.
@@ -32,13 +33,13 @@
 - **Exécuter un script** (`python fichier.py`) — vu séance 2.
 - **Python opérateurs** (`+ - * / // % **`, priorité, parenthèses) — vu séance 3, reconsolidé séance 4 (révision juste). Presque acquis.
 - **Python `input()` + conversion `int(input(...))`** — vu séance 4, réussi sans blocage. À confirmer une 2e fois. Rappel : `input()` renvoie toujours un `str`.
-- **Git : noms des 3 zones** — restitués en entier séances 4 et 5 (léger pointage). Presque acquis, reconfirmer 1 fois encore.
-- **Git : `-u` (set upstream)** — toujours oublié (3 fois). À driller en priorité.
+- **Git : `-u` (set upstream)** — enfin compris séance 7 (fausse piste « fichiers » levée : c'est l'adresse de destination, mémorisée au 1er push). Confirmer 1 dernière fois.
 - **Python conditions** (`if`/`else`, `:` + indentation, comparaisons `== != < > <= >=`, `and`) — vu séance 5, réussi (guidage sur la 2e borne). `==` vs `=` signalé. `elif` pas encore pratiqué. À recroiser.
 - **Python boucles `for` + `range`** (borne de fin exclue, variable de boucle pilotée par le `for`) — vu séance 6, refactoré proprement avec guidage. `while` introduit mais pas encore pratiqué. À reconfirmer.
+- **Python fonctions** (`def`, paramètre, `return`, appel `nom(arg)`) — vu séance 7. Définition acquise seul ; appel + `return` vs `print` compris après guidage. À recroiser sur un nouvel exemple.
 
 ### À voir (prochainement)
-- Python : fonctions (`def`, paramètres, `return`) ; repratiquer `while` et `elif`.
+- Mini-projet consolidation (input + fonction + `while` + `elif`) ; puis gestion d'erreurs (`try`/`except`), fin de Phase 1.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
