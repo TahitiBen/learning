@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux** (en cours, séance 9 — quasi bouclée). Phase 0 (environnement & git) terminée. 🎉 1er programme complet réalisé (mini-projet subnet interactif).
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). Phase 0 (git) terminée aussi. Outil de sous-réseau complet et robuste réalisé. **Prochain choix : SQL ou Python-pour-l'infra (fichiers/modules).**
 
 ## Concepts
 
@@ -37,11 +37,13 @@
 - **Python conditions `if`/`elif`/`else`** (indentation, comparaisons, `==` vs `=`, `and`/`or`) — `elif` écrit seul en séance 8 ; **`and` (dedans) vs `or` (dehors)** compris ; `else` sans condition (auto-diagnostiqué) ; `&` ≠ `and`. Presque solide, reconfirmer.
 - **Python boucles `for`/`range` + `while`** — `for`/`range` séance 6 ; **`while` en validation** pratiqué séance 8 (redemander tant qu'invalide), réussi. À reconfirmer seul.
 - **Python fonctions** (`def`, paramètre, `return`, appel `nom(arg)`) — vu séance 7. Définition acquise seul ; appel + `return` vs `print` compris après guidage. À recroiser sur un nouvel exemple.
-- **Python `try`/`except`** (+ `ValueError`) — vu séance 9, structure correcte du 1er coup. À recroiser.
-- **⚠️ À driller : mots logiques `and`/`or`/`not` vs symboles binaires `&`/`|`/`^`** — confusion persistante (même famille que `^` ≠ puissance).
+- **Python `try`/`except`** (+ `ValueError`) — vu séance 9, structure correcte du 1er coup ; réutilisé séance 10. À recroiser.
+- **Python `while True` + `break` + `continue`** — vu séance 10, assemblé en autonomie dans une boucle de saisie robuste. À reconfirmer.
+- **mots logiques `and`/`or`/`not`** — enfin justes séance 10 (drill réussi). À garder espacé pour confirmer.
+- **⚠️ Propreté du code** : tendance à laisser du code mort/redondant (le corrige quand pointé, pas encore repéré seul). À travailler en continu.
 
 ### À voir (prochainement)
-- Intégrer `try`/`except` dans l'outil subnet → saisie robuste (`while True` + `break`) → **clôture Phase 1**. Puis Phase 2 (fichiers/modules) ou démarrage **SQL**.
+- **Point de branchement** (choix de Ruben) : (A) démarrer **SQL** (SQLite) ; (B) **Python pour l'infra** (fichiers `open`/`pathlib`, modules, parsing de logs). Reco : (B) court module orienté son objectif SISR, puis SQL.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.

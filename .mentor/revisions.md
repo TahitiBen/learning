@@ -25,8 +25,10 @@
 - Python : `while` de validation (redemander tant qu'invalide) — vu le 2026-07-20 séance 8 — dernière révision : —
 - Python : boucles `for` + `range` (borne de fin **exclue**), `for` vs `while` — vu le 2026-07-20 — dernière révision : —
 - Python : fonctions `def`/`return`/appel `nom(arg)`, `return` vs `print` — vu le 2026-07-20 — dernière révision : —
-- Python : `try`/`except` + `ValueError` (attraper une erreur au lieu de planter) — vu le 2026-07-20 séance 9 — dernière révision : —
-- Python : **mots logiques `and`/`or`/`not` ≠ symboles binaires `&`/`|`/`^`** — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 9 (**à driller, confusion**)
+- Python : `try`/`except` + `ValueError` (attraper une erreur au lieu de planter) — vu le 2026-07-20 séance 9 — dernière révision : 2026-07-20 séance 10 (revu, ok)
+- Python : **mots logiques `and`/`or`/`not` ≠ symboles binaires `&`/`|`/`^`** — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 10 (**enfin juste** → espacer, reconfirmer 1 fois)
+- Python : `while True` + `break` (sortir) + `continue` (tour suivant) — vu le 2026-07-20 séance 10 — dernière révision : —
+- Python : motif « saisie robuste » (`while True` + `try`/`except` + validation + `break`) — vu le 2026-07-20 séance 10 — dernière révision : —
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
 
