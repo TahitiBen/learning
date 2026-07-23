@@ -15,13 +15,14 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux** (en cours, séance 8). Phase 0 (environnement & git) terminée. 🎉 1er programme complet réalisé (mini-projet subnet interactif).
+**Phase 1 — Python fondamentaux** (en cours, séance 9 — quasi bouclée). Phase 0 (environnement & git) terminée. 🎉 1er programme complet réalisé (mini-projet subnet interactif).
 
 ## Concepts
 
 ### Acquis (sans indice, ≥ 2 fois)
 - **Python types & règle guillemets = texte** (`str`/`int`/`float`/`bool`, `type()`) — corrigé seul en séance 2, puis répondu juste sans indice en révision séance 3.
 - **Git : les 4 zones** (working directory → staging → repository → remote) — restituées correctement plusieurs séances de suite (5, 6, 7).
+- **Git : `-u` (set upstream)** — enregistre la branche de destination du push ; compris et reformulé correctement séances 7 puis 9 (sans « fichiers »).
 
 ### Fragiles (vus, mais avec indice ou une seule fois)
 - **Terminal / navigation** : `cd`, `mkdir`, `ls`, `Copy-Item`, `$HOME`, `~` — vus aujourd'hui, à consolider.
@@ -33,13 +34,14 @@
 - **Exécuter un script** (`python fichier.py`) — vu séance 2.
 - **Python opérateurs** (`+ - * / // % **`, priorité, parenthèses) — vu séance 3, reconsolidé séance 4 (révision juste). Presque acquis.
 - **Python `input()` + conversion `int(input(...))`** — vu séance 4, réussi sans blocage. À confirmer une 2e fois. Rappel : `input()` renvoie toujours un `str`.
-- **Git : `-u` (set upstream)** — enfin compris séance 7 (fausse piste « fichiers » levée : c'est l'adresse de destination, mémorisée au 1er push). Confirmer 1 dernière fois.
 - **Python conditions `if`/`elif`/`else`** (indentation, comparaisons, `==` vs `=`, `and`/`or`) — `elif` écrit seul en séance 8 ; **`and` (dedans) vs `or` (dehors)** compris ; `else` sans condition (auto-diagnostiqué) ; `&` ≠ `and`. Presque solide, reconfirmer.
 - **Python boucles `for`/`range` + `while`** — `for`/`range` séance 6 ; **`while` en validation** pratiqué séance 8 (redemander tant qu'invalide), réussi. À reconfirmer seul.
 - **Python fonctions** (`def`, paramètre, `return`, appel `nom(arg)`) — vu séance 7. Définition acquise seul ; appel + `return` vs `print` compris après guidage. À recroiser sur un nouvel exemple.
+- **Python `try`/`except`** (+ `ValueError`) — vu séance 9, structure correcte du 1er coup. À recroiser.
+- **⚠️ À driller : mots logiques `and`/`or`/`not` vs symboles binaires `&`/`|`/`^`** — confusion persistante (même famille que `^` ≠ puissance).
 
 ### À voir (prochainement)
-- Gestion d'erreurs (`try`/`except`) pour rendre le programme increvable (saisie non numérique) → fin de Phase 1. Puis Phase 2 (fichiers, modules) ou démarrage SQL.
+- Intégrer `try`/`except` dans l'outil subnet → saisie robuste (`while True` + `break`) → **clôture Phase 1**. Puis Phase 2 (fichiers/modules) ou démarrage **SQL**.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
