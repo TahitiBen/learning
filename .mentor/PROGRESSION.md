@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). Phase 0 (git) terminée aussi. Outil de sous-réseau complet et robuste réalisé. **Prochain choix : SQL ou Python-pour-l'infra (fichiers/modules).**
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 11 (fichiers). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -41,9 +41,10 @@
 - **Python `while True` + `break` + `continue`** — vu séance 10, assemblé en autonomie dans une boucle de saisie robuste. À reconfirmer.
 - **mots logiques `and`/`or`/`not`** — enfin justes séance 10 (drill réussi). À garder espacé pour confirmer.
 - **⚠️ Propreté du code** : tendance à laisser du code mort/redondant (le corrige quand pointé, pas encore repéré seul). À travailler en continu.
+- **Python fichiers** (`open`/`with`/`read`/`write`, `\n`, chemin relatif = répertoire courant) — vu séance 11, réussi (1 bug guillemet corrigé seul). À recroiser.
 
 ### À voir (prochainement)
-- **Point de branchement** (choix de Ruben) : (A) démarrer **SQL** (SQLite) ; (B) **Python pour l'infra** (fichiers `open`/`pathlib`, modules, parsing de logs). Reco : (B) court module orienté son objectif SISR, puis SQL.
+- Lire un fichier **ligne par ligne** (`for ligne in f:`) et le traiter (compter, filtrer) → parsing de logs/inventaires. Puis modules, `pathlib`. SQL prévu ensuite.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.

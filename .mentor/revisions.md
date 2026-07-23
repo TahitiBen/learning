@@ -29,6 +29,7 @@
 - Python : **mots logiques `and`/`or`/`not` ≠ symboles binaires `&`/`|`/`^`** — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 10 (**enfin juste** → espacer, reconfirmer 1 fois)
 - Python : `while True` + `break` (sortir) + `continue` (tour suivant) — vu le 2026-07-20 séance 10 — dernière révision : —
 - Python : motif « saisie robuste » (`while True` + `try`/`except` + validation + `break`) — vu le 2026-07-20 séance 10 — dernière révision : —
+- Python : fichiers `open`/`with`/`read`/`write`, `\n`, chemin relatif = répertoire courant — vu le 2026-07-20 séance 11 — dernière révision : —
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
 
