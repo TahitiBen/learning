@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 11 (fichiers). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 12 (fichiers + lecture ligne par ligne). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -41,10 +41,11 @@
 - **Python `while True` + `break` + `continue`** — vu séance 10, assemblé en autonomie dans une boucle de saisie robuste. À reconfirmer.
 - **mots logiques `and`/`or`/`not`** — enfin justes séance 10 (drill réussi). À garder espacé pour confirmer.
 - **⚠️ Propreté du code** : tendance à laisser du code mort/redondant (le corrige quand pointé, pas encore repéré seul). À travailler en continu.
-- **Python fichiers** (`open`/`with`/`read`/`write`, `\n`, chemin relatif = répertoire courant) — vu séance 11, réussi (1 bug guillemet corrigé seul). À recroiser.
+- **Python fichiers** (`open`/`with`/`read`/`write`, `\n`, chemin relatif = répertoire courant) — vu séance 11 ; **oublie les faits (modes `r`/`w`/`a`, chemin) entre séances** → garder en révision.
+- **Python lecture ligne par ligne** (`for ligne in f:`, `.strip()`) + **compteur** (`+= 1`) — vu séance 12, assemblé correctement (bonne indentation avant/dans/après). À reconfirmer.
 
 ### À voir (prochainement)
-- Lire un fichier **ligne par ligne** (`for ligne in f:`) et le traiter (compter, filtrer) → parsing de logs/inventaires. Puis modules, `pathlib`. SQL prévu ensuite.
+- **Filtrer/chercher** dans un fichier (`if "x" in ligne:`, façon `grep`) → parsing de logs. Puis modules, `pathlib`. SQL prévu ensuite.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
