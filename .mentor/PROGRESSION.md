@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 12 (fichiers + lecture ligne par ligne). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 13 (fichiers, lecture ligne par ligne, filtrage `in`). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -43,9 +43,10 @@
 - **⚠️ Propreté du code** : tendance à laisser du code mort/redondant (le corrige quand pointé, pas encore repéré seul). À travailler en continu.
 - **Python fichiers** (`open`/`with`/`read`/`write`, `\n`, chemin relatif = répertoire courant) — vu séance 11 ; **oublie les faits (modes `r`/`w`/`a`, chemin) entre séances** → garder en révision.
 - **Python lecture ligne par ligne** (`for ligne in f:`, `.strip()`) + **compteur** (`+= 1`) — vu séance 12, assemblé correctement (bonne indentation avant/dans/après). À reconfirmer.
+- **Python filtrage `if "x" in ligne:`** (grep-like) + **piège de sous-chaîne** (`"192.168.1"` matche `"192.168.10"` → parade : ajouter le point) — vu séance 13, fix trouvé avec 1 indice. À recroiser.
 
 ### À voir (prochainement)
-- **Filtrer/chercher** dans un fichier (`if "x" in ligne:`, façon `grep`) → parsing de logs. Puis modules, `pathlib`. SQL prévu ensuite.
+- **Extraire des champs** avec `.split()` (nom / IP), écrire un fichier de sortie filtré, puis modules & `pathlib`. SQL prévu ensuite.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
