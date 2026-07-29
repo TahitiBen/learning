@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 14 (fichiers, lecture/filtrage/parsing `.split()`). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 15 (cycle complet lire → parser → écrire un rapport). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -45,10 +45,11 @@
 - **Python lecture ligne par ligne** (`for ligne in f:`, `.strip()`) + **compteur** (`+= 1`) — vu séance 12, assemblé correctement (bonne indentation avant/dans/après). À reconfirmer.
 - **Python filtrage `if "x" in ligne:`** (grep-like) + **piège de sous-chaîne** (`"192.168.1"` matche `"192.168.10"` → parade : ajouter le point) — vu séance 13, fix trouvé avec 1 indice. À recroiser.
 - **Python `.split()` + listes + indexation `[i]` (commence à 0) + appel de méthode `()`** — vu séance 14, assemblé après guidage (scalabilité + `.strip()` vs `.strip`). À recroiser.
-- **⚠️ Oubli tenace : mode `open` `a` = append** (dit « apprendre » 3-4 fois) → driller en priorité (« A comme Ajouter »).
+- **Python écrire un rapport** (2 fichiers ouverts en même temps, `f.write` d'une chaîne construite avec `+`, `\n`) — vu séance 15, cycle read→parse→write complet. À recroiser.
+- **`a` = append** : enfin correct séance 15 (« A comme Ajouter ») → confirmer 1-2 fois puis espacer.
 
 ### À voir (prochainement)
-- **Écrire un rapport** : lire + parser + écrire le résultat dans un fichier de sortie (mini-outil d'admin). Puis modules & `pathlib`. SQL prévu ensuite.
+- **Modules avec `import`** (ex. `datetime` pour dater le rapport). Puis `pathlib`, organiser en fonctions. SQL prévu ensuite.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.

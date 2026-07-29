@@ -33,7 +33,8 @@
 - Python : lecture `for ligne in f:` + `.strip()` + compteur (`+= 1`) — vu le 2026-07-20 séance 12 — dernière révision : —
 - Python : filtrage `if "x" in ligne:` (grep) + **piège de sous-chaîne** (`in` compare des caractères ; `"192.168.1"` matche `"192.168.10"` → ajouter le point) — vu le 2026-07-20 séance 13 — dernière révision : —
 - Python : `.split(sep)` → liste + indexation `[0]`/`[1]` (commence à 0) + méthode s'appelle avec `()` — vu le 2026-07-20 séance 14 — dernière révision : —
-- ⚠️ Python : mode `open` **`a` = append = Ajouter** (oubli tenace, dit « apprendre ») — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 14 (**ENCORE faux, PRIORITÉ**)
+- Python : mode `open` **`a` = append = Ajouter** (a longtemps résisté) — vu le 2026-07-20 — dernière révision : 2026-07-20 séance 15 (**enfin juste !** → confirmer 1-2 fois puis espacer)
+- Python : écrire un rapport — ouvrir 2 fichiers d'un coup (`... as entree, open(...) as sortie`), `f.write` d'une chaîne construite avec `+` et `\n` — vu le 2026-07-20 séance 15 — dernière révision : —
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
 
