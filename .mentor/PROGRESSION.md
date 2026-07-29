@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 13 (fichiers, lecture ligne par ligne, filtrage `in`). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 14 (fichiers, lecture/filtrage/parsing `.split()`). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -44,9 +44,11 @@
 - **Python fichiers** (`open`/`with`/`read`/`write`, `\n`, chemin relatif = répertoire courant) — vu séance 11 ; **oublie les faits (modes `r`/`w`/`a`, chemin) entre séances** → garder en révision.
 - **Python lecture ligne par ligne** (`for ligne in f:`, `.strip()`) + **compteur** (`+= 1`) — vu séance 12, assemblé correctement (bonne indentation avant/dans/après). À reconfirmer.
 - **Python filtrage `if "x" in ligne:`** (grep-like) + **piège de sous-chaîne** (`"192.168.1"` matche `"192.168.10"` → parade : ajouter le point) — vu séance 13, fix trouvé avec 1 indice. À recroiser.
+- **Python `.split()` + listes + indexation `[i]` (commence à 0) + appel de méthode `()`** — vu séance 14, assemblé après guidage (scalabilité + `.strip()` vs `.strip`). À recroiser.
+- **⚠️ Oubli tenace : mode `open` `a` = append** (dit « apprendre » 3-4 fois) → driller en priorité (« A comme Ajouter »).
 
 ### À voir (prochainement)
-- **Extraire des champs** avec `.split()` (nom / IP), écrire un fichier de sortie filtré, puis modules & `pathlib`. SQL prévu ensuite.
+- **Écrire un rapport** : lire + parser + écrire le résultat dans un fichier de sortie (mini-outil d'admin). Puis modules & `pathlib`. SQL prévu ensuite.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
