@@ -3,6 +3,9 @@ import datetime
 def est_sur_reseau (ligne, reseau):
     return reseau + "." in ligne
 
+def formater_machine(morceau):
+    return "Machine : " + morceau[0] + " - IP : " + morceau [1].strip()+ "\n"
+
 maintenant = datetime.datetime.now()
 
 reseau = input("Donner le nom d'un réseau à auditer (ex. 192.168.1): ")
@@ -14,7 +17,7 @@ with open("hosts.txt", "r") as entree, open("audit.txt", "w") as sortie:
     for ligne in entree:
         morceau = ligne.split(":")
         if est_sur_reseau(ligne, reseau):
-            sortie.write("Machine : " + morceau[0] + " - IP : " + morceau [1].strip()+ "\n")
+            sortie.write(formater_machine(morceau))
             compteur += 1
 
     if compteur == 0: 

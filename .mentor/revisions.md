@@ -38,7 +38,8 @@
 - Python : `import` d'un module + `datetime` (`datetime.datetime.now()`, `.strftime("%d/%m/%Y %Hh%M")`) — vu le 2026-08-02 séance 16 — dernière révision : 2026-08-02 séance 17 (réutilisé, ok)
 - Python : un `if` agit sur une **expression** valant True/False (ex. `if reseau + "." in ligne:` = calcul d'abord, puis test) + astuce « extraire dans une variable » (`motif = reseau + "."`) — vu le 2026-08-02 séance 17 — dernière révision : —
 - ⚠️ Architecture : écrire DANS la boucle (pas après — sinon `morceau` = dernière ligne) ; en-tête avant la boucle ; total/`if compteur==0` après — vu le 2026-08-02 séance 17 — dernière révision : 2026-08-02 séance 18 (**juste**)
-- Python : structurer avec des fonctions (extraire une logique nommée, ex. `est_sur_reseau` renvoyant un bool, utilisée dans un `if`) + `import` en haut du fichier — vu le 2026-08-02 séance 18 — dernière révision : —
+- Python : structurer avec des fonctions (extraire une logique nommée, ex. `est_sur_reseau` renvoyant un bool, utilisée dans un `if`) + `import` en haut du fichier — vu le 2026-08-02 séance 18 — dernière révision : 2026-08-02 séance 19 (`import` en haut appliqué seul ✓)
+- Python : une fonction peut renvoyer une **chaîne** construite (ex. `formater_machine(morceau)`), pas seulement un bool — vu le 2026-08-02 séance 19 — dernière révision : —
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
 

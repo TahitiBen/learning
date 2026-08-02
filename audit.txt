@@ -1,2 +1,3 @@
-Audit du reseau 192.168.0 - genere le 02/08/2026 19h35
-Total : 0 machine(s)
+Audit du reseau 192.168.5 - genere le 02/08/2026 19h48
+Machine : Imprimante du bureau - IP : 192.168.5.0
+Total : 1 machine(s)
