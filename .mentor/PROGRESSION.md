@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : module fichiers/parsing **validé par le projet-bilan** (séance 17, outil d'audit réseau qui marche). Phase 0 (git) terminée. Prochain focus : structurer le code en fonctions.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : module fichiers/parsing validé (bilan séance 17). En cours (séance 18) : **structurer le code en fonctions** (1re extraction réussie). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -50,13 +50,15 @@
 - **⚠️ Nommage des variables** (a nommé une variable `là`) — point de style récurrent à travailler.
 - **⚠️ ARCHITECTURE de programme** (révélé par le projet-bilan séance 17) : les concepts isolés sont solides, mais **assembler un programme multi-étapes en autonomie** est fragile (quoi mettre avant/dans/après la boucle, stocker l'input, une logique vs branches en dur, écrire DANS la boucle). → point n°1 à travailler, d'où le passage aux fonctions.
 - **Compréhension `if <expression>`** : a compris qu'un `if` agit sur toute expression valant True/False (ex. `if reseau + "." in ligne:`), et la version 2 lignes (`motif = reseau + "."`). Bon réflexe : extraire une condition dense dans une variable.
+- **Structurer avec des fonctions** — 1re extraction réussie séance 18 (`est_sur_reseau` → bool, utilisée dans un `if`). Architecture avant/dans/après boucle : **maintenant juste** en révision. Convention `import` en haut signalée. À approfondir (décomposer un programme entier).
 
 ### Acquis récents
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
 ### À voir (prochainement)
-- **Organiser le code en fonctions** (refactorer `audit_reseau.py`) pour apprendre à structurer un programme. Puis `pathlib`, SQL.
+- **Décomposer davantage en fonctions** (ex. `formater_machine`, fonction principale `auditer(reseau)`). Puis `pathlib`, SQL.
+- NB : scripts rencommés avec préfixes numériques `01_`…`13_` (l'outil d'audit = `13_audit_reseau.py`).
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.

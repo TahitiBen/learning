@@ -1,5 +1,8 @@
 import datetime
 
+def est_sur_reseau (ligne, reseau):
+    return reseau + "." in ligne
+
 maintenant = datetime.datetime.now()
 
 reseau = input("Donner le nom d'un réseau à auditer (ex. 192.168.1): ")
@@ -10,7 +13,7 @@ with open("hosts.txt", "r") as entree, open("audit.txt", "w") as sortie:
 
     for ligne in entree:
         morceau = ligne.split(":")
-        if reseau + "." in ligne:
+        if est_sur_reseau(ligne, reseau):
             sortie.write("Machine : " + morceau[0] + " - IP : " + morceau [1].strip()+ "\n")
             compteur += 1
 
