@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 16 (fichiers, parsing, rapport daté avec `import`/`datetime`). Prochaine : mini-projet bilan. Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : module fichiers/parsing **validé par le projet-bilan** (séance 17, outil d'audit réseau qui marche). Phase 0 (git) terminée. Prochain focus : structurer le code en fonctions.
 
 ## Concepts
 
@@ -48,12 +48,15 @@
 - **Python écrire un rapport** (2 fichiers ouverts en même temps, `f.write` d'une chaîne construite avec `+`, `\n`) — vu séance 15, cycle read→parse→write complet. À recroiser.
 - **Python `import` + module `datetime`** (`datetime.datetime.now()`, `.strftime(...)`) — vu séance 16, réussi seul. À recroiser.
 - **⚠️ Nommage des variables** (a nommé une variable `là`) — point de style récurrent à travailler.
+- **⚠️ ARCHITECTURE de programme** (révélé par le projet-bilan séance 17) : les concepts isolés sont solides, mais **assembler un programme multi-étapes en autonomie** est fragile (quoi mettre avant/dans/après la boucle, stocker l'input, une logique vs branches en dur, écrire DANS la boucle). → point n°1 à travailler, d'où le passage aux fonctions.
+- **Compréhension `if <expression>`** : a compris qu'un `if` agit sur toute expression valant True/False (ex. `if reseau + "." in ligne:`), et la version 2 lignes (`motif = reseau + "."`). Bon réflexe : extraire une condition dense dans une variable.
 
 ### Acquis récents
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
+- **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
 ### À voir (prochainement)
-- **Mini-projet bilan** du module fichiers (outil d'audit réseau : input + read + filter + split + datetime + write). Puis organiser en fonctions, `pathlib`, SQL.
+- **Organiser le code en fonctions** (refactorer `audit_reseau.py`) pour apprendre à structurer un programme. Puis `pathlib`, SQL.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
