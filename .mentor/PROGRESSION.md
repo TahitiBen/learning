@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 15 (cycle complet lire → parser → écrire un rapport). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** (choix de Ruben) : en cours, séance 16 (fichiers, parsing, rapport daté avec `import`/`datetime`). Prochaine : mini-projet bilan. Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -46,10 +46,14 @@
 - **Python filtrage `if "x" in ligne:`** (grep-like) + **piège de sous-chaîne** (`"192.168.1"` matche `"192.168.10"` → parade : ajouter le point) — vu séance 13, fix trouvé avec 1 indice. À recroiser.
 - **Python `.split()` + listes + indexation `[i]` (commence à 0) + appel de méthode `()`** — vu séance 14, assemblé après guidage (scalabilité + `.strip()` vs `.strip`). À recroiser.
 - **Python écrire un rapport** (2 fichiers ouverts en même temps, `f.write` d'une chaîne construite avec `+`, `\n`) — vu séance 15, cycle read→parse→write complet. À recroiser.
-- **`a` = append** : enfin correct séance 15 (« A comme Ajouter ») → confirmer 1-2 fois puis espacer.
+- **Python `import` + module `datetime`** (`datetime.datetime.now()`, `.strftime(...)`) — vu séance 16, réussi seul. À recroiser.
+- **⚠️ Nommage des variables** (a nommé une variable `là`) — point de style récurrent à travailler.
+
+### Acquis récents
+- **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 
 ### À voir (prochainement)
-- **Modules avec `import`** (ex. `datetime` pour dater le rapport). Puis `pathlib`, organiser en fonctions. SQL prévu ensuite.
+- **Mini-projet bilan** du module fichiers (outil d'audit réseau : input + read + filter + split + datetime + write). Puis organiser en fonctions, `pathlib`, SQL.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
