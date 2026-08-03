@@ -42,7 +42,8 @@
 - Python : une fonction peut renvoyer une **chaîne** construite (ex. `formater_machine(morceau)`), pas seulement un bool — vu le 2026-08-02 séance 19 — dernière révision : 2026-08-02 séance 20 (juste)
 - Python : fonction principale `def auditer(...)` + **`if __name__ == "__main__":`** (point d'entrée ; `__main__` si lancé direct, nom du module si importé → sépare outils réutilisables et code de lancement) — vu le 2026-08-02 séance 20 — dernière révision : — (concept abstrait, à recroiser)
 - SQL : base = un fichier `.db` (SQLite) ; `CREATE TABLE nom (col TYPE, ...)` (types `INTEGER`/`TEXT`, `PRIMARY KEY` auto) = **une seule fois** — vu le 2026-08-02 séance 21 — dernière révision : —
-- SQL : `INSERT INTO table (colonnes) VALUES ('...', '...')` — texte en **guillemets simples**, répétable — vu le 2026-08-02 séance 21 — dernière révision : —
+- SQL : `INSERT INTO table (colonnes) VALUES ('...', '...')` — texte en **guillemets simples**, répétable — vu le 2026-08-02 séance 21 — dernière révision : 2026-08-02 séance 22 (revu partiellement)
+- SQL : `SELECT * / colonnes FROM table`, `WHERE` (`=`), `LIKE '192.168.1.%'` (joker `%`) — vu le 2026-08-02 séance 22 — dernière révision : —
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
 

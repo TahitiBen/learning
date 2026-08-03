@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : module fichiers/parsing validé (bilan séance 17). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL : DÉMARRÉE** (séance 21, choix de Ruben). Outil : DB Browser for SQLite ; base `sql/machines.db`. Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL : en cours** (séance 22 : `CREATE`/`INSERT`/`SELECT`/`WHERE`/`LIKE`). Outil : DB Browser for SQLite ; base `sql/machines.db`. Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -52,13 +52,14 @@
 - **Compréhension `if <expression>`** : a compris qu'un `if` agit sur toute expression valant True/False (ex. `if reseau + "." in ligne:`), et la version 2 lignes (`motif = reseau + "."`). Bon réflexe : extraire une condition dense dans une variable.
 - **Structurer avec des fonctions** — 2 extractions (`est_sur_reseau`, `formater_machine`) + **fonction principale `auditer(reseau)` + `if __name__ == "__main__"`** (séance 20). Refactor complet réussi. Applique les conventions seul (`import` en haut). **Architecture = désormais un point fort.** `if __name__ == "__main__"` compris dans le principe, à recroiser (abstrait).
 - **SQL : `CREATE TABLE` + `INSERT`** (types `INTEGER`/`TEXT`, `PRIMARY KEY` auto, guillemets simples ; base = fichier `.db`) — vu séance 21 (réactivation du BTS). Compris : CREATE une fois vs INSERT répétable. À recroiser.
+- **SQL : `SELECT`** (`SELECT *`/colonnes, `WHERE` avec `=`, `LIKE '...%'` avec joker `%`) — vu séance 22, 4 requêtes justes du 1er coup. A vu que son audit Python = 1 ligne SELECT. À recroiser.
 
 ### Acquis récents
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
 ### À voir (prochainement)
-- **SQL `SELECT`** : `SELECT * FROM`, `WHERE` (filtrer), `ORDER BY`. Puis `UPDATE`/`DELETE`, agrégations (`COUNT`, `GROUP BY`), jointures. Plus tard : relier SQL à Python (`sqlite3`).
+- **SQL : `ORDER BY` (trier), `UPDATE`, `DELETE`** (⚠️ toujours avec `WHERE` !). Puis agrégations (`COUNT`, `GROUP BY`), jointures. Plus tard : relier SQL à Python (`sqlite3`).
 - Compléments Python en attente : `pathlib`, `pip`, POO.
 - NB : scripts Python renommés `01_`…`13_` ; base SQL = `sql/machines.db`.
 
