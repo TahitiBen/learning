@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : module fichiers/parsing validé (bilan séance 17). **Structuration complète (séance 20)** : outil d'audit entièrement refactoré (imports → fonctions utilitaires → `auditer(reseau)` → `if __name__ == "__main__"`). L'ancien point faible « architecture » est devenu solide. 🎉 Phase 0 (git) terminée. **Point d'inflexion : choisir le prochain grand bloc (SQL ou compléments Python).**
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : module fichiers/parsing validé (bilan séance 17). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL : DÉMARRÉE** (séance 21, choix de Ruben). Outil : DB Browser for SQLite ; base `sql/machines.db`. Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -51,15 +51,16 @@
 - **⚠️ ARCHITECTURE de programme** (révélé par le projet-bilan séance 17) : les concepts isolés sont solides, mais **assembler un programme multi-étapes en autonomie** est fragile (quoi mettre avant/dans/après la boucle, stocker l'input, une logique vs branches en dur, écrire DANS la boucle). → point n°1 à travailler, d'où le passage aux fonctions.
 - **Compréhension `if <expression>`** : a compris qu'un `if` agit sur toute expression valant True/False (ex. `if reseau + "." in ligne:`), et la version 2 lignes (`motif = reseau + "."`). Bon réflexe : extraire une condition dense dans une variable.
 - **Structurer avec des fonctions** — 2 extractions (`est_sur_reseau`, `formater_machine`) + **fonction principale `auditer(reseau)` + `if __name__ == "__main__"`** (séance 20). Refactor complet réussi. Applique les conventions seul (`import` en haut). **Architecture = désormais un point fort.** `if __name__ == "__main__"` compris dans le principe, à recroiser (abstrait).
+- **SQL : `CREATE TABLE` + `INSERT`** (types `INTEGER`/`TEXT`, `PRIMARY KEY` auto, guillemets simples ; base = fichier `.db`) — vu séance 21 (réactivation du BTS). Compris : CREATE une fois vs INSERT répétable. À recroiser.
 
 ### Acquis récents
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
-### À voir (prochainement) — CHOIX de Ruben à la prochaine séance
-- **(A) Démarrer SQL** (SQLite) — nouveau domaine, très demandé.
-- **(B) Compléments Python** : `pathlib`, `pip`/modules externes, intro POO.
-- NB : scripts renommés avec préfixes numériques `01_`…`13_` (l'outil d'audit = `13_audit_reseau.py`).
+### À voir (prochainement)
+- **SQL `SELECT`** : `SELECT * FROM`, `WHERE` (filtrer), `ORDER BY`. Puis `UPDATE`/`DELETE`, agrégations (`COUNT`, `GROUP BY`), jointures. Plus tard : relier SQL à Python (`sqlite3`).
+- Compléments Python en attente : `pathlib`, `pip`, POO.
+- NB : scripts Python renommés `01_`…`13_` ; base SQL = `sql/machines.db`.
 
 ## Points d'attention pédagogiques
 - Ne pas s'attarder sur la théorie : donner un exemple minimal puis passer vite à la pratique.
