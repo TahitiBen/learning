@@ -45,8 +45,10 @@
 - SQL : `INSERT INTO table (colonnes) VALUES ('...', '...')` — texte en **guillemets simples**, répétable — vu le 2026-08-02 séance 21 — dernière révision : 2026-08-02 séance 22 (revu partiellement)
 - SQL : `SELECT * / colonnes FROM table`, `WHERE` (`=`), `LIKE '192.168.1.%'` (joker `%` = n'importe quelle suite de caractères) — vu le 2026-08-02 séance 22 — dernière révision : 2026-08-02 séance 23 (LIKE ré-expliqué concrètement, compris → recroiser)
 - SQL : `ORDER BY` (tri, `DESC`), `UPDATE ... SET ... WHERE`, `DELETE FROM ... WHERE` — **règle d'or : toujours un `WHERE`** — vu le 2026-08-02 séance 23 — dernière révision : 2026-08-02 séance 24 (**règle WHERE oubliée au rappel** → re-driller)
-- SQL : `LIKE` a besoin du `%` (LIKE sans `%` = `=`) — rappel : `'192.168.5.%'` — vu séance 22 — dernière révision : 2026-08-02 séance 24 (**`%` oublié au rappel** → re-driller via exemples)
+- SQL : `LIKE` a besoin du `%` (LIKE sans `%` = `=`) — rappel : `'192.168.5.%'` — vu séance 22 — dernière révision : 2026-08-02 séance 25 (juste → consolidation)
+- SQL : règle d'or `WHERE` avec UPDATE/DELETE — vu séance 23 — dernière révision : 2026-08-02 séance 25 (juste → consolidation)
 - SQL : `COUNT(*)` (nb de lignes) + `COUNT(*)` avec `WHERE` (compter par filtre) ; agrégats `SUM`/`AVG`/`MIN`/`MAX` — vu le 2026-08-02 séance 24 — dernière révision : —
+- SQL : `ALTER TABLE ADD COLUMN` + `GROUP BY` (`SELECT col, COUNT(*) ... GROUP BY col` = agréger par groupe) — vu le 2026-08-02 séance 25 — dernière révision : —
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
 

@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL : en cours** (séance 24 : CRUD complet + `COUNT`). Outil : DB Browser for SQLite ; base `sql/machines.db` (5 machines). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL : en cours** (séance 25 : CRUD + `COUNT` + `ALTER TABLE` + `GROUP BY`). Outil : DB Browser for SQLite ; base `sql/machines.db` (5 machines, colonne `reseau` ajoutée). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -55,13 +55,15 @@
 - **SQL : `SELECT`** (`SELECT *`/colonnes, `WHERE` avec `=`, `LIKE '...%'` avec joker `%`) — vu séance 22 ; **`LIKE` a nécessité une ré-explication concrète séance 23** (abstrait à l'oral, OK via exemples + pratique) → à recroiser.
 - **SQL : `ORDER BY` / `UPDATE` / `DELETE` → CRUD complet** (règle d'or : toujours un `WHERE`) — vu séance 23. ⚠️ Règle WHERE + `LIKE %` **oubliés au rappel oral séance 24** mais appliqués juste en pratique → garder en révision.
 - **SQL : `COUNT(*)`** (+ `WHERE` pour compter par filtre ; mention SUM/AVG/MIN/MAX) — vu séance 24, réussi (total 5, réseau 192.168.1 = 3). À recroiser.
+- **SQL : `ALTER TABLE ADD COLUMN` + `GROUP BY`** (agréger par groupe : `SELECT reseau, COUNT(*) ... GROUP BY reseau`) — vu séance 25, séquence complète (ALTER + 3 UPDATE + GROUP BY) réussie du 1er coup. À recroiser.
+- **SQL : `LIKE %` + règle WHERE** : après plusieurs oublis au rappel, **restitués justes séance 25** → en consolidation (garder espacé).
 
 ### Acquis récents
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
 ### À voir (prochainement)
-- **SQL : `GROUP BY`** — ajouter colonne `reseau` (`ALTER TABLE ADD COLUMN`) + remplir via `UPDATE ... WHERE ip LIKE ...`, puis `SELECT reseau, COUNT(*) ... GROUP BY reseau`. Puis jointures (`JOIN`). Plus tard : SQL depuis Python (`sqlite3`).
+- **SQL : jointures (`JOIN`)** — créer une 2e table (ex. `reseaux`) + la joindre à `machines`. Puis relier SQL à Python (`sqlite3`).
 - Compléments Python en attente : `pathlib`, `pip`, POO.
 - NB : scripts Python renommés `01_`…`13_` ; base SQL = `sql/machines.db`.
 
