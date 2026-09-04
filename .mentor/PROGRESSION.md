@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL + pont Python** (séance 29 : SQL depuis Python avec `sqlite3`, lecture). SQL couvert : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Base `sql/machines.db` (tables `machines` + `reseaux`). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL + pont Python** (séance 30 : `sqlite3` lecture **et écriture**). SQL couvert : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Python↔SQL : lire + écrire (`execute`/`fetchall`/`commit`). Base `sql/machines.db` (tables `machines` + `reseaux`). Phase 0 (git) terminée.
 
 ## Concepts
 
@@ -57,7 +57,7 @@
 - **SQL : `COUNT(*)`** (+ `WHERE` pour compter par filtre ; mention SUM/AVG/MIN/MAX) — vu séance 24, réussi (total 5, réseau 192.168.1 = 3). À recroiser.
 - **SQL : `ALTER TABLE ADD COLUMN` + `GROUP BY`** (agréger par groupe : `SELECT reseau, COUNT(*) ... GROUP BY reseau`) — vu séance 25, séquence complète (ALTER + 3 UPDATE + GROUP BY) réussie du 1er coup. À recroiser.
 - **SQL : `JOIN ... ON`** (croiser 2 tables, `SELECT t1.col, t2.col FROM t1 JOIN t2 ON t1.cle=t2.cle`, préfixer les colonnes) — vu séance 28 (2e table `reseaux`), 1re jointure réussie après corrections (virgule CREATE, mauvaise table INSERT, `ON` avec `=`). À recroiser.
-- **Pont `sqlite3` (Python → SQL, lecture)** : `connect(fichier)` → `cursor()` → `execute("SQL")` → `fetchall()` (lignes = tuples) → `close()` ; fermer DB Browser (verrou) — vu séance 29, réussi (a renommé les variables pour tester sa compréhension). À recroiser.
+- **Pont `sqlite3` (Python ↔ SQL, lecture + écriture)** : `connect` → `cursor` → `execute("SQL")` → `fetchall()` (lignes = tuples, `ligne[1]`…) → `close`. Écriture : `execute("INSERT...")` + **`conn.commit()`**. Distinction : `commit`/`connect`/`close` = **connexion** ; `execute`/`fetchall` = **curseur** — vu séances 29-30, réussi. À recroiser.
 - **SQL : `LIKE %` + règle WHERE** : après plusieurs oublis au rappel, **restitués justes séance 25** → en consolidation (garder espacé).
 - **RÉVISION PYTHON complète (séance 26)** : série de 7 TP. Fondamentaux réactivés (variables, opérateurs, print, input/conditions, boucles/compteur, fonctions, try/except, fichiers, while True/break). Récurrents ré-ancrés : **convertir ET stocker** (`x=float(x)`), print (virgule/`+str()`), vrai compteur, appel de fonction. À surveiller encore : `while True`, `or` (dehors), `__main__`, division `/`.
 - **RÉVISION SQL (séance 27)** : 6 requêtes pratiques. **Reconnaissance OK avec antisèche, production à froid rouillée.** Fragiles à froid : `FROM`, guillemets simples, `=` vs `LIKE`, `SELECT col, COUNT(*)` (pas `*`) en GROUP BY, `WHERE` obligatoire, vrai nom de table. → faire écrire des requêtes **à froid** régulièrement.
@@ -67,7 +67,7 @@
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
 ### À voir (prochainement)
-- **Suite `sqlite3`** : accéder aux colonnes d'une ligne (`ligne[1]`), requête filtrée depuis Python, puis **écrire** (`INSERT`/`UPDATE` + `commit()`). Puis approfondir JOIN (LEFT JOIN). Compléments Python en attente : `pathlib`, `pip`, POO.
+- **Requêtes paramétrées (`?`) + injection SQL** (sécurité — insérer de la donnée utilisateur sans danger). Puis approfondir JOIN (LEFT JOIN). Compléments Python en attente : `pathlib`, `pip`, POO.
 - Compléments Python en attente : `pathlib`, `pip`, POO.
 - NB : scripts Python renommés `01_`…`13_` ; base SQL = `sql/machines.db`.
 
