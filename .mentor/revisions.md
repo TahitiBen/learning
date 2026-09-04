@@ -50,6 +50,7 @@
 - SQL : `COUNT(*)` (nb de lignes) + `COUNT(*)` avec `WHERE` (compter par filtre) ; agrégats `SUM`/`AVG`/`MIN`/`MAX` — vu le 2026-08-02 séance 24 — dernière révision : —
 - SQL : `ALTER TABLE ADD COLUMN` + `GROUP BY` (`SELECT col, COUNT(*) ... GROUP BY col` = agréger par groupe) — vu le 2026-08-02 séance 25 — dernière révision : —
 - SQL : `JOIN ... ON t1.cle = t2.cle` (croiser 2 tables, préfixer les colonnes) — vu le 2026-08-02 séance 28 — dernière révision : —
+- Python+SQL : `sqlite3` — `connect(fichier)` → `cursor()` → `execute("SQL")` → `fetchall()` → `close()` (lignes = tuples ; fermer DB Browser) — vu le 2026-08-02 séance 29 — dernière révision : —
 - SQL : **production à froid** (écrire une requête de mémoire : `FROM` + guillemets simples + noms exacts colonnes/table + `=` vs `LIKE`) — à driller à chaque séance SQL — dernière révision : 2026-08-02 séance 28 (encore fragile)
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
