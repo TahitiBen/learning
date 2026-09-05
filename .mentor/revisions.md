@@ -51,7 +51,9 @@
 - SQL : `ALTER TABLE ADD COLUMN` + `GROUP BY` (`SELECT col, COUNT(*) ... GROUP BY col` = agréger par groupe) — vu le 2026-08-02 séance 25 — dernière révision : —
 - SQL : `JOIN ... ON t1.cle = t2.cle` (croiser 2 tables, préfixer les colonnes) — vu le 2026-08-02 séance 28 — dernière révision : —
 - Python+SQL : `sqlite3` — `connect(fichier)` → `cursor()` → `execute("SQL")` → `fetchall()` → `close()` (lignes = tuples ; fermer DB Browser) — vu le 2026-08-02 séance 29 — dernière révision : —
-- Python+SQL : écrire → `execute("INSERT...")` + **`conn.commit()`** ; `commit`/`connect`/`close` = **connexion**, `execute`/`fetchall` = **curseur** ; accès colonne `ligne[1]` — vu le 2026-08-02 séance 30 — dernière révision : —
+- Python+SQL : écrire → `execute("INSERT...")` + **`conn.commit()`** ; `commit`/`connect`/`close` = **connexion**, `execute`/`fetchall` = **curseur** ; accès colonne `ligne[1]` — vu le 2026-08-02 séance 30 — dernière révision : 2026-09-04 séance 31 (commit=connexion, juste)
+- Python+SQL : **requêtes paramétrées `?`** (donnée externe → `execute("... = ?", (val,))`, jamais `+`) + notion d'**injection SQL** — vu le 2026-09-04 séance 31 — dernière révision : —
+- SQL : `GROUP BY` (`SELECT col, COUNT(*) ... GROUP BY col`) — **consolidé** séance 31 (structure juste au rappel) — dernière révision : 2026-09-04 séance 31
 - SQL : **production à froid** (écrire une requête de mémoire : `FROM` + guillemets simples + noms exacts colonnes/table + `=` vs `LIKE`) — à driller à chaque séance SQL — dernière révision : 2026-08-02 séance 28 (encore fragile)
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —
