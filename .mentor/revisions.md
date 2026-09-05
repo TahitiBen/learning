@@ -55,7 +55,9 @@
 - Python+SQL : **requêtes paramétrées `?`** (donnée externe → `execute("... = ?", (val,))`, jamais `+`) + notion d'**injection SQL** — vu le 2026-09-04 séance 31 — dernière révision : —
 - SQL : `GROUP BY` (`SELECT col, COUNT(*) ... GROUP BY col`) — **consolidé** séance 31 (structure juste au rappel) — dernière révision : 2026-09-04 séance 31
 - ⚠️ Python+SQL : **`commit()` = sur la CONNEXION**, pas le curseur ; `connect`=ouvrir / `execute`=requête (confusions récurrentes) — vu séances 30/32 — dernière révision : 2026-09-04 séance 32 (**re-erreur → driller**)
-- Python+SQL : motif appli CLI (menu `while True` + fonctions `lister`/`ajouter`/`rechercher` + sqlite3 + `?`) — vu le 2026-09-04 séance 32 — dernière révision : —
+- Python+SQL : motif appli CLI CRUD (menu `while True` + fonctions lister/ajouter/rechercher/modifier/supprimer + sqlite3 + `?`) — vu le 2026-09-04 séances 32-33 — dernière révision : —
+- SQL : `UPDATE table SET col = ? WHERE ...` et `DELETE FROM table WHERE ...` (paramétrés, règle d'or WHERE) — production à froid encore fragile — vu séance 33 — dernière révision : 2026-09-04 séance 33
+- ⚠️ Python : une méthode s'appelle avec `()` (ex. `commit()`, `.strip()`) — récurrent — dernière révision : 2026-09-04 séance 33
 - SQL : **production à froid** (écrire une requête de mémoire : `FROM` + guillemets simples + noms exacts colonnes/table + `=` vs `LIKE`) — à driller à chaque séance SQL — dernière révision : 2026-08-02 séance 28 (encore fragile)
 - Git : `git commit --amend -m "..."` (corriger le dernier commit) — vu le 2026-07-20 — dernière révision : —
 - Git : `git log --oneline` (inspecter l'historique) — vu le 2026-07-20 — dernière révision : —

@@ -34,12 +34,34 @@ def rechercher():
 
     ty.close()
 
+def modifier():
+    jun = sqlite3.connect("sql/machines.db")
+    tao = jun.cursor()
+
+    modif = input("Nommez la machine à modifier: ")
+    ip = input("Indiquez la nouvelle adresse IP: ")
+    tao.execute("UPDATE machines SET ip = ? WHERE nom = ?", (ip,modif))
+    jun.commit()
+
+    jun.close()
+
+def supprimer ():
+    ye = sqlite3.connect("sql/machines.db")
+    yo = ye.cursor()
+
+    kan = input("Quel machine voulez-vous supprimer")
+    yo.execute("DELETE FROM machines WHERE nom = ?", (kan,))
+    ye.commit()
+
+    ye.close()
 
 while True: 
     print("1. Lister les machines")
     print("2. Ajouter une machine")
     print("3. Rechercher une machin")
-    print("4. Quitter")
+    print("4. Modifier une machine")
+    print("5. Supprimer une machine")
+    print("6. Quitter")
     choix = input("Ton choix : ")
 
     if choix == "1":
@@ -49,6 +71,10 @@ while True:
     elif choix == "3":
         rechercher()
     elif choix == "4":
+        modifier()
+    elif choix == "5":
+        supprimer()
+    elif choix == "6":
         break
     else:
         print("Choix invalide")
