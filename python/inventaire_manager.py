@@ -29,8 +29,12 @@ def rechercher():
 
     text = input("Nom de la machine : ")
     ban.execute("SELECT * FROM machines WHERE nom = ?", (text,))
-    for ligne in ban.fetchall():
-        print(ligne)
+    resultats = ban.fetchall()
+    if not resultats:
+        print ("Aucune machines trouvee.")
+    else:
+        for ligne in resultats:
+            print(ligne)
 
     ty.close()
 
@@ -49,9 +53,13 @@ def supprimer ():
     ye = sqlite3.connect("sql/machines.db")
     yo = ye.cursor()
 
-    kan = input("Quel machine voulez-vous supprimer")
+    kan = input("Quel machine voulez-vous supprimer: ")
     yo.execute("DELETE FROM machines WHERE nom = ?", (kan,))
     ye.commit()
+    if yo.rowcount == 0:
+        print ("Aucune machine a ce nom.")
+    else:
+        print("Machine supprimee !")
 
     ye.close()
 

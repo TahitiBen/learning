@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL + pont Python** (séance 33 : **CAPSTONE CRUD COMPLET** — `python/inventaire_manager.py` : menu 6 options + `lister`/`ajouter`/`rechercher`/`modifier`/`supprimer`, sqlite3, requêtes paramétrées). SQL : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Base `sql/machines.db` (`machines` + `reseaux`). Phase 0 (git) terminée. **Projet portfolio-worthy.**
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL + pont Python** (séance 34 : **CAPSTONE COMPLET + ROBUSTE** — `python/inventaire_manager.py` : CRUD 6 options + messages de feedback (`rowcount`, recherche vide) + requêtes paramétrées). SQL : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Base `sql/machines.db`. Phase 0 (git) terminée. **Projet portfolio-ready.**
 
 ## Concepts
 
@@ -69,8 +69,11 @@
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
-### À voir (prochainement)
-- **Robustesse du capstone** : `try`/`except` (saisie invalide) + messages « aucune machine trouvée/modifiée/supprimée » (`cursor.rowcount` / `fetchall` vide). Puis LEFT JOIN, compléments Python (`pathlib`, `pip`, POO).
+### À voir (prochainement) — au choix de Ruben
+- **(A)** Portfolio : `try`/`except` (crash-proof) + `README` de l'outil.
+- **(B)** SQL : **LEFT JOIN**.
+- **(C)** Compléments Python : `pathlib`, `pip`, POO.
+Drills : DELETE/UPDATE à froid (pas de `*` — c'est SELECT), appel de méthode `()`.
 
 ## Note pédagogique clé
 - **Pour un concept ABSTRAIT (ex. injection SQL), faire une DÉMO à faire soi-même** (voir le résultat), pas d'explication verbale prolongée. Confirmé séance 31 : compris seulement après l'expérience live. (Vaut aussi pour LIKE en séance 23.)
