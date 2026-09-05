@@ -56,7 +56,7 @@
 - **SQL : `ORDER BY` / `UPDATE` / `DELETE` → CRUD complet** (règle d'or : toujours un `WHERE`) — vu séance 23. ⚠️ Règle WHERE + `LIKE %` **oubliés au rappel oral séance 24** mais appliqués juste en pratique → garder en révision.
 - **SQL : `COUNT(*)`** (+ `WHERE` pour compter par filtre ; mention SUM/AVG/MIN/MAX) — vu séance 24, réussi (total 5, réseau 192.168.1 = 3). À recroiser.
 - **SQL : `ALTER TABLE ADD COLUMN` + `GROUP BY`** (agréger par groupe : `SELECT reseau, COUNT(*) ... GROUP BY reseau`) — vu séance 25, séquence complète (ALTER + 3 UPDATE + GROUP BY) réussie du 1er coup. À recroiser.
-- **SQL : `JOIN ... ON`** (croiser 2 tables, `SELECT t1.col, t2.col FROM t1 JOIN t2 ON t1.cle=t2.cle`, préfixer les colonnes) — vu séance 28 (2e table `reseaux`), 1re jointure réussie après corrections (virgule CREATE, mauvaise table INSERT, `ON` avec `=`). À recroiser.
+- **SQL : `JOIN ... ON` (INNER) + `LEFT JOIN`** — INNER = matches dans les 2 tables (séance 28) ; **LEFT JOIN = toutes les lignes de gauche, `NULL` si pas de match** (séance 36, démo Orpheline). ⚠️ à froid : condition de jointure = **`ON`** (a mis `WHERE`) → driller.
 - **Pont `sqlite3` (Python ↔ SQL, lecture + écriture)** : `connect` → `cursor` → `execute("SQL")` → `fetchall()` (lignes = tuples, `ligne[1]`…) → `close`. Écriture : `execute("INSERT...")` + **`conn.commit()`**. Distinction : `commit`/`connect`/`close` = **connexion** ; `execute`/`fetchall` = **curseur** — vu séances 29-30, réussi. À recroiser.
 - **Requêtes paramétrées `?` + injection SQL** (donnée externe → `execute("... WHERE x = ?", (val,))`, jamais `+` ; valeur dans un tuple) — vu séance 31, **compris via démo live** (injection observée puis bloquée). À recroiser. Clé cybersécu.
 - **SQL `GROUP BY`** : structure enfin restituée juste au rappel (séance 31) → **consolidé**.
@@ -69,10 +69,10 @@
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
-### À voir (prochainement) — au choix de Ruben (A faite)
-- **(B)** SQL : **LEFT JOIN**.
-- **(C)** Compléments Python : `pathlib`, `pip`, POO.
-Plus tard : dépôt GitHub dédié pour le capstone (portfolio). Drills : DELETE/UPDATE à froid (pas de `*`), appel de méthode `()`, orthographe des textes.
+### À voir (prochainement) — A et B faites
+- **(C)** Compléments Python : `pathlib`, `pip` (modules externes), intro POO.
+- Ou : bilan Phase 3 / nouveau projet ; dépôt GitHub dédié pour le capstone (portfolio).
+Drills : JOIN...`ON` à froid, DELETE/UPDATE sans `*`, appel de méthode `()`.
 
 ## Note pédagogique clé
 - **Pour un concept ABSTRAIT (ex. injection SQL), faire une DÉMO à faire soi-même** (voir le résultat), pas d'explication verbale prolongée. Confirmé séance 31 : compris seulement après l'expérience live. (Vaut aussi pour LIKE en séance 23.)
