@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL + pont Python** (séance 31 : requêtes paramétrées `?` + injection SQL). SQL : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Python↔SQL : lire + écrire (`execute`/`fetchall`/`commit`) + `?` sécurisé. Base `sql/machines.db` (`machines` + `reseaux`). Phase 0 (git) terminée.
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL + pont Python** (séance 32 : **CAPSTONE réalisé** — gestionnaire d'inventaire CLI `python/inventaire_manager.py` : menu + `lister`/`ajouter`/`rechercher`, sqlite3, requêtes paramétrées). SQL : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Base `sql/machines.db` (`machines` + `reseaux`). Phase 0 (git) terminée. **Projet portfolio-worthy.**
 
 ## Concepts
 
@@ -60,6 +60,7 @@
 - **Pont `sqlite3` (Python ↔ SQL, lecture + écriture)** : `connect` → `cursor` → `execute("SQL")` → `fetchall()` (lignes = tuples, `ligne[1]`…) → `close`. Écriture : `execute("INSERT...")` + **`conn.commit()`**. Distinction : `commit`/`connect`/`close` = **connexion** ; `execute`/`fetchall` = **curseur** — vu séances 29-30, réussi. À recroiser.
 - **Requêtes paramétrées `?` + injection SQL** (donnée externe → `execute("... WHERE x = ?", (val,))`, jamais `+` ; valeur dans un tuple) — vu séance 31, **compris via démo live** (injection observée puis bloquée). À recroiser. Clé cybersécu.
 - **SQL `GROUP BY`** : structure enfin restituée juste au rappel (séance 31) → **consolidé**.
+- **CAPSTONE (séance 32)** : application CLI complète (menu + 3 fonctions + sqlite3 + requêtes paramétrées) — **assemblée seul avec guidage**. Énorme progrès architecture (vs point faible séance 17). ⚠️ Récurrent à driller : **`commit` = connexion** (pas curseur, 2e fois) ; laisse encore du **code mort**.
 - **SQL : `LIKE %` + règle WHERE** : après plusieurs oublis au rappel, **restitués justes séance 25** → en consolidation (garder espacé).
 - **RÉVISION PYTHON complète (séance 26)** : série de 7 TP. Fondamentaux réactivés (variables, opérateurs, print, input/conditions, boucles/compteur, fonctions, try/except, fichiers, while True/break). Récurrents ré-ancrés : **convertir ET stocker** (`x=float(x)`), print (virgule/`+str()`), vrai compteur, appel de fonction. À surveiller encore : `while True`, `or` (dehors), `__main__`, division `/`.
 - **RÉVISION SQL (séance 27)** : 6 requêtes pratiques. **Reconnaissance OK avec antisèche, production à froid rouillée.** Fragiles à froid : `FROM`, guillemets simples, `=` vs `LIKE`, `SELECT col, COUNT(*)` (pas `*`) en GROUP BY, `WHERE` obligatoire, vrai nom de table. → faire écrire des requêtes **à froid** régulièrement.
@@ -69,7 +70,7 @@
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
 ### À voir (prochainement)
-- **Mini-projet capstone** : gestionnaire d'inventaire (Python + SQLite) — ajouter/lister/chercher des machines avec `input` + `sqlite3` + requêtes paramétrées `?`. Puis LEFT JOIN, puis compléments Python (`pathlib`, `pip`, POO).
+- **Enrichir le capstone** : ajouter **Modifier (UPDATE)** et **Supprimer (DELETE)** au menu (CRUD complet dans l'app) + robustesse `try`/`except`. Puis LEFT JOIN, compléments Python (`pathlib`, `pip`, POO).
 
 ## Note pédagogique clé
 - **Pour un concept ABSTRAIT (ex. injection SQL), faire une DÉMO à faire soi-même** (voir le résultat), pas d'explication verbale prolongée. Confirmé séance 31 : compris seulement après l'expérience live. (Vaut aussi pour LIKE en séance 23.)
