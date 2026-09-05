@@ -1,67 +1,82 @@
 import sqlite3
 
 def lister():
-    bran = sqlite3.connect("sql/machines.db")
-    ray = bran.cursor()
+    try:
+        bran = sqlite3.connect("sql/machines.db")
+        ray = bran.cursor()
 
-    ray.execute("SELECT * FROM machines")
-    for ligne in ray.fetchall():
-        print(ligne)
-
-    bran.close()
-
-def ajouter():
-    recon = sqlite3.connect("sql/machines.db")
-    charles = recon.cursor()
-
-    nom = input("Entrez le nom de la machine: ")
-    ip = input("Maintenant son adresse IP: ")
-    reseau = input("Et enfin le réseau auquel elle appartient: ")
-    charles.execute("INSERT INTO machines (nom, ip, reseau) VALUES (?, ?, ?)", (nom, ip, reseau))
-    recon.commit()
-    print ("Machine ajoutee !")
-
-    recon.close()
-
-def rechercher():
-    ty = sqlite3.connect("sql/machines.db")
-    ban = ty.cursor()
-
-    text = input("Nom de la machine : ")
-    ban.execute("SELECT * FROM machines WHERE nom = ?", (text,))
-    resultats = ban.fetchall()
-    if not resultats:
-        print ("Aucune machines trouvee.")
-    else:
-        for ligne in resultats:
+        ray.execute("SELECT * FROM machines")
+        for ligne in ray.fetchall():
             print(ligne)
 
-    ty.close()
+        bran.close()
+    except sqlite3.Error as e:
+        print ("Erreur avec la base :", e)
+
+def ajouter():
+    try:
+        recon = sqlite3.connect("sql/machines.db")
+        charles = recon.cursor()
+
+        nom = input("Entrez le nom de la machine: ")
+        ip = input("Maintenant son adresse IP: ")
+        reseau = input("Et enfin le réseau auquel elle appartient: ")
+        charles.execute("INSERT INTO machines (nom, ip, reseau) VALUES (?, ?, ?)", (nom, ip, reseau))
+        recon.commit()
+        print ("Machine ajoutee !")
+
+        recon.close()
+    except sqlite3.Error as e:
+            print ("Erreur avec la base :", e)
+
+def rechercher():
+    try:
+        ty = sqlite3.connect("sql/machines.db")
+        ban = ty.cursor()
+
+        text = input("Nom de la machine : ")
+        ban.execute("SELECT * FROM machines WHERE nom = ?", (text,))
+        resultats = ban.fetchall()
+        if not resultats:
+            print ("Aucune machines trouvee.")
+        else:
+            for ligne in resultats:
+                print(ligne)
+
+        ty.close()
+    except sqlite3.Error as e:
+            print ("Erreur avec la base :", e)
 
 def modifier():
-    jun = sqlite3.connect("sql/machines.db")
-    tao = jun.cursor()
+    try:
+        jun = sqlite3.connect("sql/machines.db")
+        tao = jun.cursor()
 
-    modif = input("Nommez la machine à modifier: ")
-    ip = input("Indiquez la nouvelle adresse IP: ")
-    tao.execute("UPDATE machines SET ip = ? WHERE nom = ?", (ip,modif))
-    jun.commit()
+        modif = input("Nommez la machine à modifier: ")
+        ip = input("Indiquez la nouvelle adresse IP: ")
+        tao.execute("UPDATE machines SET ip = ? WHERE nom = ?", (ip,modif))
+        jun.commit()
 
-    jun.close()
+        jun.close()
+    except sqlite3.Error as e:
+            print ("Erreur avec la base :", e)
 
 def supprimer ():
-    ye = sqlite3.connect("sql/machines.db")
-    yo = ye.cursor()
+    try:
+        ye = sqlite3.connect("sql/machines.db")
+        yo = ye.cursor()
 
-    kan = input("Quel machine voulez-vous supprimer: ")
-    yo.execute("DELETE FROM machines WHERE nom = ?", (kan,))
-    ye.commit()
-    if yo.rowcount == 0:
-        print ("Aucune machine a ce nom.")
-    else:
-        print("Machine supprimee !")
+        kan = input("Quel machine voulez-vous supprimer: ")
+        yo.execute("DELETE FROM machines WHERE nom = ?", (kan,))
+        ye.commit()
+        if yo.rowcount == 0:
+            print ("Aucune machine a ce nom.")
+        else:
+            print("Machine supprimee !")
 
-    ye.close()
+        ye.close()
+    except sqlite3.Error as e:
+            print ("Erreur avec la base :", e)
 
 while True: 
     print("1. Lister les machines")
