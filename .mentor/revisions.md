@@ -57,7 +57,9 @@
 - ⚠️ Python+SQL : **`commit()` = sur la CONNEXION**, pas le curseur ; `connect`=ouvrir / `execute`=requête (confusions récurrentes) — vu séances 30/32 — dernière révision : 2026-09-04 séance 32 (**re-erreur → driller**)
 - Python+SQL : motif appli CLI CRUD (menu `while True` + fonctions lister/ajouter/rechercher/modifier/supprimer + sqlite3 + `?`) — vu le 2026-09-04 séances 32-33 — dernière révision : —
 - SQL : `UPDATE table SET col = ? WHERE ...` et `DELETE FROM table WHERE ...` (paramétrés, règle d'or WHERE ; **pas de `*`**) — production à froid fragile — vu séance 33 — dernière révision : 2026-09-04 séance 36 (DELETE sans `*` juste)
-- SQL : `INNER JOIN` (matches des 2 tables) vs `LEFT JOIN` (toutes les lignes de gauche, `NULL` sinon) ; **condition de jointure = `ON` (JAMAIS `WHERE`)** — vu séance 36 — dernière révision : 2026-09-22 séance 38 (**ENFIN `ON` à froid sans indice ✓** → reconfirmer 1× espacé puis retirer)
+- SQL : `INNER JOIN` (matches des 2 tables) vs `LEFT JOIN` (toutes les lignes de gauche, `NULL` sinon) ; **condition de jointure = `ON`** — vu séance 36 — dernière révision : 2026-09-22 séance 39 (**`ON` à froid 2× de suite → ACQUIS, retiré du drill**)
+- Python : accéder à un champ d'un JSON d'API — `donnees = reponse.json()` puis `donnees["clé"]` (dict → accès par clé entre crochets) — vu le 2026-09-22 séance 39 — dernière révision : —
+- ⚠️ SQL : `UPDATE table SET col = 'val' WHERE nom = 'X'` — **cibler par la bonne colonne** (nom, pas ip) + valeurs texte au caractère près — production à froid, a fallu guider séance 39 — dernière révision : 2026-09-22 séance 39 (à redriller)
 - Python : `pip install <paquet>` (PyPI) + `import requests` → `requests.get(url)` → `.json()` — vu le 2026-09-22 séance 37 — dernière révision : —
 - Python : supervision HTTP — `requests.get(url)` dans `try`, `reponse.status_code == 200` (200=OK), `except requests.exceptions.RequestException` (site injoignable = exception, pas un code) — vu le 2026-09-22 séance 38 — dernière révision : —
 - ⚠️ Python : une méthode s'appelle avec `()` (ex. `commit()`, `.strip()`) — récurrent — dernière révision : 2026-09-04 séance 33
