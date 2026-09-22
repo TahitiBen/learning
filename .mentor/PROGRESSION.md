@@ -15,7 +15,7 @@
 
 ## Phase actuelle
 
-**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 3 — SQL + pont Python** (séance 35 : **CAPSTONE TERMINÉ + POLI** — `python/inventaire_manager.py` : CRUD 6 options, requêtes paramétrées, feedback (`rowcount`/recherche vide), `try`/`except` sur les 5 fonctions, + README). SQL : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Base `sql/machines.db`. Phase 0 (git) terminée. **Projet portfolio-ready.**
+**Phase 1 — Python fondamentaux : TERMINÉE** 🎉 (séance 10). **Phase 2 — Python pour l'infra** : bien couverte (fichiers, parsing, structuration en fonctions — séances 11-20). **Phase 4 — Compléments Python** : démarrée séance 37 (`pip` + modules externes, `requests`/API/JSON). Phases 1-3 couvertes. **Phase 3 — SQL + pont Python** (séance 35 : **CAPSTONE TERMINÉ + POLI** — `python/inventaire_manager.py` : CRUD 6 options, requêtes paramétrées, feedback (`rowcount`/recherche vide), `try`/`except` sur les 5 fonctions, + README). SQL : CRUD, `COUNT`, `GROUP BY`, `ALTER`, `JOIN`. Base `sql/machines.db`. Phase 0 (git) terminée. **Projet portfolio-ready.**
 
 ## Concepts
 
@@ -56,7 +56,8 @@
 - **SQL : `ORDER BY` / `UPDATE` / `DELETE` → CRUD complet** (règle d'or : toujours un `WHERE`) — vu séance 23. ⚠️ Règle WHERE + `LIKE %` **oubliés au rappel oral séance 24** mais appliqués juste en pratique → garder en révision.
 - **SQL : `COUNT(*)`** (+ `WHERE` pour compter par filtre ; mention SUM/AVG/MIN/MAX) — vu séance 24, réussi (total 5, réseau 192.168.1 = 3). À recroiser.
 - **SQL : `ALTER TABLE ADD COLUMN` + `GROUP BY`** (agréger par groupe : `SELECT reseau, COUNT(*) ... GROUP BY reseau`) — vu séance 25, séquence complète (ALTER + 3 UPDATE + GROUP BY) réussie du 1er coup. À recroiser.
-- **SQL : `JOIN ... ON` (INNER) + `LEFT JOIN`** — INNER = matches dans les 2 tables (séance 28) ; **LEFT JOIN = toutes les lignes de gauche, `NULL` si pas de match** (séance 36, démo Orpheline). ⚠️ à froid : condition de jointure = **`ON`** (a mis `WHERE`) → driller.
+- **SQL : `JOIN ... ON` (INNER) + `LEFT JOIN`** — INNER = matches dans les 2 tables ; LEFT = toutes les lignes de gauche, `NULL` sinon. ⚠️⚠️ **condition de jointure = `ON` : erreur `WHERE` RÉCURRENTE (séances 36 ET 37) → driller en priorité** (mnémo « JOINture ON condition »).
+- **Python : `pip install` + modules externes (`requests`)** — `requests.get(url)` + `.json()` (API/HTTP) — vu séance 37, réussi (IP publique via api.ipify.org). À recroiser.
 - **Pont `sqlite3` (Python ↔ SQL, lecture + écriture)** : `connect` → `cursor` → `execute("SQL")` → `fetchall()` (lignes = tuples, `ligne[1]`…) → `close`. Écriture : `execute("INSERT...")` + **`conn.commit()`**. Distinction : `commit`/`connect`/`close` = **connexion** ; `execute`/`fetchall` = **curseur** — vu séances 29-30, réussi. À recroiser.
 - **Requêtes paramétrées `?` + injection SQL** (donnée externe → `execute("... WHERE x = ?", (val,))`, jamais `+` ; valeur dans un tuple) — vu séance 31, **compris via démo live** (injection observée puis bloquée). À recroiser. Clé cybersécu.
 - **SQL `GROUP BY`** : structure enfin restituée juste au rappel (séance 31) → **consolidé**.
@@ -69,10 +70,10 @@
 - **`a` = append** : confirmé 2 fois (séances 15 & 16) → **acquis**.
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
-### À voir (prochainement) — A et B faites
-- **(C)** Compléments Python : `pathlib`, `pip` (modules externes), intro POO.
-- Ou : bilan Phase 3 / nouveau projet ; dépôt GitHub dédié pour le capstone (portfolio).
-Drills : JOIN...`ON` à froid, DELETE/UPDATE sans `*`, appel de méthode `()`.
+### À voir (prochainement) — Phase 4 compléments Python (en cours)
+- Suite `requests` (mini-outil « site en ligne ? » via code HTTP ; accéder à un champ JSON `reponse.json()["ip"]`), puis **`pathlib`** (chemins), intro **POO**.
+- Plus tard : dépôt GitHub dédié pour le capstone (portfolio).
+Drills : **JOIN → ON** (prioritaire, récurrent), production SQL à froid, appel de méthode `()`.
 
 ## Note pédagogique clé
 - **Pour un concept ABSTRAIT (ex. injection SQL), faire une DÉMO à faire soi-même** (voir le résultat), pas d'explication verbale prolongée. Confirmé séance 31 : compris seulement après l'expérience live. (Vaut aussi pour LIKE en séance 23.)
