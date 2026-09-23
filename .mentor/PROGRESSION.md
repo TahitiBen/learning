@@ -61,6 +61,7 @@
 - **Python : `pip install` + modules externes (`requests`)** — `requests.get(url)` + `.json()` (API/HTTP) — vu séance 37, réussi (IP publique). **Séance 38 : mini-outil de supervision** (`requests.get` dans `try` + `reponse.status_code == 200` + `except requests.exceptions.RequestException` pour site injoignable) — réussi (google=200, domaine bidon=injoignable). À recroiser.
 - **Python : accéder à un champ précis d'un JSON d'API** (`donnees = reponse.json()` puis `donnees["clé"]`) — séance 39, réussi seul, code propre (API GitHub `/users/TahitiBen` → `public_repos`, `created_at`). À recroiser.
 - **Python : `pathlib`** (`from pathlib import Path`, `Path("x") / "y"`, `.iterdir()`, `.name`, `.suffix`, `.exists()`) — séance 40, exercice « lister un dossier » réussi. A eu besoin de la motivation concrète (avant/après sur ses scripts d'audit) avant de pratiquer. À recroiser.
+- **Python : POO — bases (classe, objet)** — `class Machine:` + `__init__(self, nom, ip)` + `self.nom = nom` ; création de 2 objets (`Machine("...","...")`) + accès attributs `.nom`/`.ip` — séance 41, **réussi seul du 1er coup**, code propre (motivé par l'avant/après vs `ligne[0]`/`ligne[1]` des tuples). À recroiser : ajouter des **méthodes** à la classe.
 - **Pont `sqlite3` (Python ↔ SQL, lecture + écriture)** : `connect` → `cursor` → `execute("SQL")` → `fetchall()` (lignes = tuples, `ligne[1]`…) → `close`. Écriture : `execute("INSERT...")` + **`conn.commit()`**. Distinction : `commit`/`connect`/`close` = **connexion** ; `execute`/`fetchall` = **curseur** — vu séances 29-30, réussi. À recroiser.
 - **Requêtes paramétrées `?` + injection SQL** (donnée externe → `execute("... WHERE x = ?", (val,))`, jamais `+` ; valeur dans un tuple) — vu séance 31, **compris via démo live** (injection observée puis bloquée). À recroiser. Clé cybersécu.
 - **SQL `GROUP BY`** : structure enfin restituée juste au rappel (séance 31) → **consolidé**.
@@ -74,7 +75,7 @@
 - **Module fichiers/parsing** (read, ligne par ligne, filtrage `in`+point, `split`+index, write, rapport daté) — **validé par le projet-bilan** séance 17.
 
 ### À voir (prochainement) — Phase 4 compléments Python (en cours)
-- Intro **POO** (classes / objets) — grosse étape conceptuelle. Prévoir démo concrète (il a besoin du « à quoi ça sert » avant la théorie).
+- **POO suite** : ajouter des **méthodes** à la classe (ex. `def afficher(self):` qui affiche nom+ip ; méthode qui renvoie un booléen). Puis notion « plusieurs objets dans une liste » (liste d'objets `Machine`).
 - Éventuellement : combiner `pathlib` + audit (traiter tous les fichiers d'un dossier) sur un vrai mini-projet.
 - Plus tard : dépôt GitHub dédié pour le capstone (portfolio).
 Drills : **production SQL à froid** (DELETE juste séance 40 mais oubli du `FROM` ; UPDATE fragile séance 39), appel de méthode `()`, séparer les args de `print` par des **virgules** (oubli séance 40). Tendance récurrente : **coquilles + syntaxe** (`Reequest`, `Server1`≠`Serveur1`, virgules `print`) → relire au caractère près.
